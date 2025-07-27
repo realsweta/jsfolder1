@@ -19,7 +19,7 @@ body {
     border-radius: 8px;
     font-size: 48px;
     font-weight: bold;
-    color: #ff6600;
+    color: #f3f3f3;
     margin: 20px auto;
     text-align: center;
 
@@ -36,7 +36,7 @@ body {
     text-align: center;
     font-weight: bold;
     position: relative;
-    font-size: 20px;
+    font-size: 30px;
     margin-top: 0;
     margin-bottom: 0px;
   }
@@ -52,6 +52,25 @@ body {
     flex-wrap: wrap;
     margin-top: 0;
     margin-bottom: 0;
+    }
+   
+    .signup-options {
+      display: flex;
+      gap: 8px;
+    }
+
+    .signup-options.signup-btn{
+      padding: 6px 12px;
+      background-color: #f8c471;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .signup-options.signup-btn :hover {
+      background-color: #e67e22;
+      color: white;
     }
 
     .navbar {
@@ -84,14 +103,19 @@ body {
       background-color: rgba(255,255,255,0.25);
      }
 
+     .navbar .location {
+      margin-left: 0.5px;
+     }
 
-  .location {
-    font-size: 16px;
-    color: white;
-  }
-  
+     .location {
+      font-size: 20px;
+      color: white;
+      margin-left: 0;
+      margin-right: auto;
+    }
+    
   .search-box input {
-    padding: 6px 10px;
+    padding: 5px 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -105,6 +129,10 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin-left: 20px;
+  }
+
+  .search-btn :hover {
+    background-color: #edbe7f;
   }
   
   .cart-icon {
